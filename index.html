@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- This demo is created based on animation library by David Galles.
+mji54 07/18/2018 -->
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>
+			Heap Sort Visualization
+		</title>
+
+		<!-- css sheet for how the page is laid out -->
+
+		<!-- <link rel="stylesheet" href="./css/visualizationPageStyle.css"> -->
+    <!-- added by mji54 -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+		<!-- jqueury stuff.  Only used for the animation speed slider. -->
+		<link rel="stylesheet" href="./css/jquery-ui-1.8.11.custom.css">
+    <!-- <link rel="stylesheet" href="./css/jquery-ui-1.8.11.customSlider.css"> -->
+		<script type="text/javascript" async="" src="./heap_sort_js/ga.js"></script><script src="./heap_sort_js/jquery-1.5.2.min.js"></script>
+		<!-- <script src="./heap_sort_js/jquery-ui-1.8.11.custom.min.js"></script> -->
+
+		<!-- Javascript for the actual visualization code -->
+		<script type="text/javascript" src="./heap_sort_js/CustomEvents.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/UndoFunctions.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/AnimatedObject.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/AnimatedLabel.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/AnimatedCircle.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/AnimatedRectangle.js"> </script>
+		<!-- <script type="text/javascript" src="./heap_sort_js/AnimatedLinkedList.js"> </script> -->
+		<script type="text/javascript" src="./heap_sort_js/HighlightCircle.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/Line.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/ObjectManager.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/AnimationMain.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/Algorithm.js"> </script>
+		<script type="text/javascript" src="./heap_sort_js/HeapSort.js"> </script>
+
+    <!-- Added by mji54 -->
+    <script type="text/javascript" src="./heap_sort_js/AnimatedCounter.js"></script>
+
+
+	 <!-- <script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script><script type="text/javascript" src="./heap_sort_js/HR.js"></script></head> -->
+
+	<body onload="init();" class="VisualizationMainPage">
+
+		<div id="container">
+
+			<div id="header">
+				<h1>HEAP SORT</h1>
+			</div>
+
+			<div =="" id="mainContent">
+
+				<div id="algoControlSection">
+					<!-- Table for buttons to control specific animation (insert/find/etc) -->
+					<!-- (filled in by javascript code specific to the animtion) -->
+					<table id="AlgorithmSpecificControls"> <td><input type="Button" value="Randomize Array"></td><td><input type="Button" value="Heap Sort"></td></table>
+				</div>
+
+					<!-- Drawing canvas where all animation is done.  Note:  can be resized in code -->
+          <!-- 07/18/18 update: can no longer be resized in code -->
+
+				<div id="generalAnimationControlSection">
+          <!-- 07/18/18 update: the hardcoded html code below is no longer displayed -->
+
+					<table id="GeneralAnimationControls">
+            </table>
+				</div>
+        <div id="canvasContainer">
+          <canvas id="canvas" width="1080" height="570"></canvas>
+        </div>
+
+
+			</div> <!-- mainContent -->
+
+		</div><!-- container -->
+    <div id="footer">
+			<!-- TODO: add link to my github page -->
+      <div id="github">
+				<a href="https://github.com/mji54" target="_blank"></a>
+			</div>
+    </div>
+</body>
+</html>

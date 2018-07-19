@@ -1,0 +1,195 @@
+/* Copyrighted 2018 mji54. All rights reserved. */
+
+tbody {
+  display: none;
+}
+
+html,body {
+  font-family: 'Lato', sans-serif;
+  background: #F4F4F4;
+  height: 100%;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+input, .control-table {
+  border: 1px solid #4E878C;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  padding: 0.5em;
+  border-radius: 2px;
+  margin: 0 2px 0 2px;
+  color: #4E878C;
+  text-transform:capitalize;
+}
+
+input:hover {
+  background: #CBEDDF;
+  color: #00241B;
+  cursor: pointer;
+}
+
+.control-table {
+  background: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#container {
+  min-height: 100%;
+  margin: 0 auto -50px;
+}
+
+#canvasContainer {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* #mainContent {
+  display: flex;
+} */
+
+.VisualizationMainPage {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  height: 70px;
+  background-color: #4bc670;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-left: 1em;
+  color: #ffffff;
+}
+
+#footer {
+  height: 50px;
+  padding: 0;
+  display: flex;
+  background: #4BC670;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+
+#github {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/GitHub-Mark-Light-32px.png");
+}
+
+#github:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#github a {
+  display: block;
+  height: inherit;
+  width: inherit;
+}
+
+#github a:hover {
+  text-decoration: none;
+}
+
+/* #footer p {
+  padding: 0 15px 0 15px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-decoration: none;
+} */
+
+#GeneralAnimationControls {
+  width: 100%;
+  color: #4E878C;
+  text-transform:capitalize;
+  background: #CBEDDF;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+
+#algoControlSection {
+  background: #4E878C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0 5px 0;
+}
+
+#GeneralAnimationControls input, .control-table {
+  border: 1px solid #93E5AB;
+  color: #4BC670;
+}
+
+#GeneralAnimationControls input:hover {
+  background: #93E5AB;
+  color: #00241B;
+  cursor: pointer;
+}
+
+#GeneralAnimationControls .button.skip-forward {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+#GeneralAnimationControls .button.pause {
+  padding: 0;
+  width: 30px;
+  height: 25px;
+  border-style: double;
+  border-width: 0px 0px 0px 20px;
+  border-color: #4BC670;
+  background: rgba(0,0,0,0);
+  margin-left: 14px;
+  border-radius: 0;
+}
+
+#GeneralAnimationControls .button.play {
+  padding: 0;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border-width: 14.5px 0px 14.5px 20px;
+  border-color: transparent transparent transparent #4BC670;
+  background: rgba(0,0,0,0);
+  margin-left: 15px;
+}
+
+#GeneralAnimationControls input:disabled,
+#algoControlSection input:disabled {
+  background: #ffffff;
+  border-color: #E0E0E0;
+  color: #E0E0E0;
+  cursor: auto;
+}
+
+#GeneralAnimationControls .button:focus,
+#algoControlSection input:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 1080px) {
+  #canvasContainer {
+    display: block;
+  }
+}

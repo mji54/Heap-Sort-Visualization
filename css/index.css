@@ -133,6 +133,19 @@ input:hover {
   align-items: center;
   justify-content: center;
   padding: 5px 0 5px 0;
+  flex-wrap: wrap;
+}
+
+#note {
+  background: #4E878C;
+  color: #93E5AB;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 7px 0;
+  font-size: 12px;
+  margin-top: -2px;
 }
 
 #GeneralAnimationControls input, .control-table {
